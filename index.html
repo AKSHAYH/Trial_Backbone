@@ -1,0 +1,40 @@
+<html>
+<head>
+</head>
+<body>
+<div id="wrapper">
+<form id="form" method="post" action="submit">
+<input id="inp1" type="text" name="Name" feedback-data='Name' >Name</input></br/>
+<input id="inp2" type="text" name="Marks" feedback-data='Marks'>Marks</input></br>
+<button id="add" value="submit">Add</button>
+</form>
+<div id="listing">
+<script type="text/template" id="Student-template">
+		<span class="list-header"><%= Name %> <%= Marks %></span>
+		
+	</script>
+
+	</div>
+	</div>
+<div id="errmsg">
+<script type="text/template" id="Student-template2">
+		<span><%= mes %>  <%= type %></span>
+	</div>
+		
+	</script>
+	<script src="js/libs/jquery-1.10.2.min.js" type="text/javascript"></script>
+	<script src="js/libs/underscore-min.js" type="text/javascript"></script>
+	<script src="js/libs/backbone-min.js" type="text/javascript"></script>
+	<script src="js/libs/backbone.js" type="text/javascript"></script>
+	<script src="js/libs/backbone-ModelBinder.js" type="text/javascript"></script>
+	
+	<script src="js/routers/router.js" type="text/javascript"></script>
+	<script src="js/models/Student-model.js" type="text/javascript"></script>
+	<script src="js/models/fac-model.js" type="text/javascript"></script>
+	<script src="js/views/student-view.js" type="text/javascript"></script>
+	
+	<script src="js/app.js" type="text/javascript"></script>
+	
+	
+</body>
+</html>
